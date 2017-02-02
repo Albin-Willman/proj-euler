@@ -56,3 +56,11 @@ t.print
 puts t.traverse
 
 
+t67 = Triangle.new
+File.open('./18/data67.txt').read.each_line { |line|
+  t67.add_row(split_line(line))
+}
+t67.print
+puts t67.traverse
+
+
