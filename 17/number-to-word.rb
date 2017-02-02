@@ -52,15 +52,6 @@ def count_letters_in_span(first, last)
   (first..last).to_a.inject(0) { |s, i|  count_letters(NumberTransformer.convert(i)) + s }
 end
 
-puts NumberTransformer.convert(1)
-puts NumberTransformer.convert(2)
-puts NumberTransformer.convert(14)
-puts NumberTransformer.convert(21)
-puts NumberTransformer.convert(30)
-puts NumberTransformer.convert(115)
-puts NumberTransformer.convert(342)
-puts count_letters(NumberTransformer.convert(342))
-
 puts count_letters_in_span(1, 5)
 puts count_letters_in_span(1, 1000)
 
