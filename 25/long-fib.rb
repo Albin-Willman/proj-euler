@@ -8,5 +8,4 @@ while fm.to_s.length < limit
   n += 1
 end
 
-
 puts "== #{n} =="
